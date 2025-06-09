@@ -5,8 +5,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Fish1 {
+    private final Duck2 duck2;
+
     @Autowired
-    private Duck2 duck2;
+    public Fish1(Duck2 duck2) {
+        this.duck2 = duck2;
+    }
 
     @Override
     public String toString() {

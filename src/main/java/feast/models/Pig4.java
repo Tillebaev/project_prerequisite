@@ -5,8 +5,12 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class Pig4 {
-    @Autowired
     private Lamb5 lamb5;
+
+    @Autowired
+    public void setLamb5(Lamb5 lamb5) {
+        this.lamb5 = lamb5;
+    }
 
     @Override
     public String toString() {
